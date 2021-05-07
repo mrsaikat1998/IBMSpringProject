@@ -1,6 +1,7 @@
 package com.ibm;
 
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.AbstractApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class ClientLogic {
@@ -10,5 +11,6 @@ public class ClientLogic {
 		category1.show();
 		System.out.println("----------------------");
 		System.out.println(category1);
+		((AbstractApplicationContext) context).close();
 	}
 }
