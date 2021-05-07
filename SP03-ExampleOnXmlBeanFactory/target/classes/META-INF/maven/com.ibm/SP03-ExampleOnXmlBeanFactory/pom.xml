@@ -6,10 +6,10 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.ibm</groupId>
-	<artifactId>SP01-SpringFirstApplication</artifactId>
+	<artifactId>SP03-ExampleOnXmlBeanFactory</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 
-	<name>SP01-SpringFirstApplication</name>
+	<name>SP03-ExampleOnXmlBeanFactory</name>
 	<!-- FIXME change it to the project's website -->
 	<url>http://www.example.com</url>
 
@@ -96,4 +96,3 @@
 		</pluginManagement>
 	</build>
 </project>
-
