@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans-4.3.xsd">
+
+	<bean id="emp" class="com.ibm.Employee">
+		<constructor-arg value="101"></constructor-arg>
+		<constructor-arg value="Saikat"></constructor-arg>
+		<constructor-arg value="150000"></constructor-arg>
+		<constructor-arg>
+			<ref bean="address" />
+		</constructor-arg>
+	</bean>
+
+	<bean id="address" class="com.ibm.Address">
+		<property name="state" value="West Bengal" />
+		<property name="city" value="Bankura" />
+		<property name="country" value="India" />
+	</bean>
+</beans>
