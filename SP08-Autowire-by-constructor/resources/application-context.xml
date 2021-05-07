@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans-4.3.xsd">
+
+	<bean id="category1" class="com.ibm.Categories" autowire="byType">
+		<property name="name" value="Technology" />
+	</bean>
+
+	<bean id="book1" class="com.ibm.Book">
+		<property name="bookName" value="Java" />
+		<property name="bookPrice" value="799" />
+	</bean>
+
+	<!-- <bean id="book2" class="com.ibm.Book" primary="true"> <property name="bookName" 
+		value="SpringBoot" /> <property name="bookPrice" value="864" /> </bean> -->
+
+	<bean id="sample1" class="com.ibm.Sample">
+		<property name="sampleName" value="Spring" />
+		<property name="samplePrice" value="985" />
+	</bean>
+
+	<!-- <bean id="sample2" class="com.ibm.Sample" primary="true">
+		<property name="sampleName" value="Hibernate" />
+		<property name="samplePrice" value="545" />
+	</bean> -->
+
+</beans>

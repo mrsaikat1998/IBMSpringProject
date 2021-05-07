@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans-4.3.xsd">
+
+	<bean id="category1" class="com.ibm.Categories" autowire="constructor">
+		<property name="name" value="Technologies" />
+		<!-- <constructor-arg value="Technology"></constructor-arg> -->
+	</bean>
+
+	<bean id="book1" class="com.ibm.Book">
+		<property name="bookName" value="Java" />
+		<property name="bookPrice" value="799" />
+	</bean>
+
+	<!-- <bean id="book2" class="com.ibm.Book" primary="true">
+		<property name="bookName" value="Spring" />
+		<property name="bookPrice" value="684" />
+	</bean> -->
+
+</beans>
