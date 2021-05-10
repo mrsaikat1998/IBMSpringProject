@@ -12,17 +12,18 @@
 		<property name="bookPrice" value="799" />
 	</bean>
 
-	<!-- <bean id="book2" class="com.ibm.Book" primary="true"> <property name="bookName" 
-		value="SpringBoot" /> <property name="bookPrice" value="864" /> </bean> -->
+	<bean id="book2" class="com.ibm.Book" primary="true">
+		<property name="bookName" value="SpringBoot" />
+		<property name="bookPrice" value="864" />
+	</bean>
 
 	<bean id="sample1" class="com.ibm.Sample">
 		<property name="sampleName" value="Spring" />
 		<property name="samplePrice" value="985" />
 	</bean>
 
-	<!-- <bean id="sample2" class="com.ibm.Sample" primary="true">
-		<property name="sampleName" value="Hibernate" />
-		<property name="samplePrice" value="545" />
-	</bean> -->
+	<!-- <bean id="sample2" class="com.ibm.Sample" primary="true"> <property 
+		name="sampleName" value="Hibernate" /> <property name="samplePrice" value="545" 
+		/> </bean> -->
 
 </beans>
